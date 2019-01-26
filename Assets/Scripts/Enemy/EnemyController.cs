@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour {
 
+
     public float speed = 8;
     public int health = 100;
     public float raycastLength = 6;

@@ -10,10 +10,11 @@ public class EnemyDamage : MonoBehaviour {
     public float interval = 0.4f;
 
     public HealthBar hb;
-
+     
     private EnemyController Controller;
 
     void Start()
+
     {
         Controller = gameObject.GetComponent<EnemyController>();
         defaultTint = new Color[gameObject.GetComponent<Renderer>().materials.Length];

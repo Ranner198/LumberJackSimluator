@@ -29,7 +29,7 @@ public class SpawnerController : MonoBehaviour {
         {        
             StartCoroutine(Spawn ());
         }
-    }
+    } 
 
     IEnumerator Spawn() {
 
