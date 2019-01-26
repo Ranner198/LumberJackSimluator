@@ -42,6 +42,7 @@ public class TreeHealth : MonoBehaviour {
         hb.SetHealth(Health);
     }
 
+
     IEnumerator Flash(int flashCount, GameObject tag)
     {
         int flashCounter = 0;

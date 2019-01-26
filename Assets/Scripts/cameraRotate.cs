@@ -13,7 +13,7 @@ public class cameraRotate : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 angle += 90;
-            }
+            } 
             if (Input.GetKeyDown(KeyCode.E))
             {
                 angle -= 90;
