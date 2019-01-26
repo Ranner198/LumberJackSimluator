@@ -2999,6 +2999,7 @@ MonoBehaviour:
   PlayerColor: {r: 0, g: 1, b: 0.20283651, a: 1}
   EnemyColor: {r: 1, g: 0, b: 0, a: 1}
   defaultTint: []
+  hb: {fileID: 0}
 --- !u!1001 &313824877
 Prefab:
   m_ObjectHideFlags: 0
@@ -3208,6 +3209,7 @@ MonoBehaviour:
   defaultTint: []
   flashCount: 6
   interval: 0.4
+  hb: {fileID: 0}
 --- !u!1 &325215365
 GameObject:
   m_ObjectHideFlags: 0
@@ -4663,6 +4665,7 @@ MonoBehaviour:
   PlayerColor: {r: 0, g: 1, b: 0.20283651, a: 1}
   EnemyColor: {r: 1, g: 0, b: 0, a: 1}
   defaultTint: []
+  hb: {fileID: 0}
 --- !u!1001 &520628239
 Prefab:
   m_ObjectHideFlags: 0
@@ -4983,6 +4986,7 @@ MonoBehaviour:
   PlayerColor: {r: 0, g: 1, b: 0.20283651, a: 1}
   EnemyColor: {r: 1, g: 0, b: 0, a: 1}
   defaultTint: []
+  hb: {fileID: 0}
 --- !u!1001 &589650514
 Prefab:
   m_ObjectHideFlags: 0
@@ -5076,6 +5080,7 @@ MonoBehaviour:
   PlayerColor: {r: 0, g: 1, b: 0.20283651, a: 1}
   EnemyColor: {r: 1, g: 0, b: 0, a: 1}
   defaultTint: []
+  hb: {fileID: 0}
 --- !u!1 &612876910
 GameObject:
   m_ObjectHideFlags: 0
@@ -7518,7 +7523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1001961651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8923,7 +8928,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22775084, y: 0.337}
   m_AnchorMax: {x: 0.7727509, y: 0.8407936}
-  m_AnchoredPosition: {x: -0.61576843, y: 0}
+  m_AnchoredPosition: {x: -0.6157837, y: 0}
   m_SizeDelta: {x: -1.23154, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1168892563
@@ -11673,6 +11678,7 @@ MonoBehaviour:
   PlayerColor: {r: 0, g: 1, b: 0.20283651, a: 1}
   EnemyColor: {r: 1, g: 0, b: 0, a: 1}
   defaultTint: []
+  hb: {fileID: 0}
 --- !u!1001 &1527047359
 Prefab:
   m_ObjectHideFlags: 0
@@ -12452,6 +12458,7 @@ MonoBehaviour:
   PlayerColor: {r: 0, g: 1, b: 0.20283651, a: 1}
   EnemyColor: {r: 1, g: 0, b: 0, a: 1}
   defaultTint: []
+  hb: {fileID: 0}
 --- !u!1001 &1614116677
 Prefab:
   m_ObjectHideFlags: 0
@@ -12604,6 +12611,7 @@ MonoBehaviour:
   PlayerColor: {r: 0, g: 1, b: 0.20283651, a: 1}
   EnemyColor: {r: 1, g: 0, b: 0, a: 1}
   defaultTint: []
+  hb: {fileID: 0}
 --- !u!1001 &1630443263
 Prefab:
   m_ObjectHideFlags: 0
