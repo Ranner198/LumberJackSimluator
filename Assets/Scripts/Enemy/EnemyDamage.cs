@@ -9,6 +9,8 @@ public class EnemyDamage : MonoBehaviour {
     public int flashCount = 6;
     public float interval = 0.4f;
 
+    public HealthBar hb;
+
     private EnemyController Controller;
 
     void Start()
@@ -21,11 +23,13 @@ public class EnemyDamage : MonoBehaviour {
             defaultTint[count] = mat.color;
             count++;
         }
+        hb.SetHealth(Controller.enemy.GetHealth());
     }
 
     void TakeDamage(int val)
     {
         Controller.enemy.TakeDamage(50);
+        hb.SetHealth(Controller.enemy.GetHealth());
     }
 
     void OnCollisionEnter(Collision coll)

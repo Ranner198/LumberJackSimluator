@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour {
     public float offsetRaycastHeight = 4.5f;
     public float attackCoolDown = 3;
     public float knockBackAmount = 4;
-    public float knockBackTime = 4;    
+    public float knockBackTime = 4;
 
     private GameObject house;
     private Vector3 SpawnPoint;
@@ -23,11 +23,15 @@ public class EnemyController : MonoBehaviour {
 
     public EnemyClass enemy;
 
+    void Awake()
+    {
+        enemy = new EnemyClass(health, SpawnPoint);
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        house = GameObject.FindGameObjectWithTag("House");
-        enemy = new EnemyClass(health, SpawnPoint);
+        house = GameObject.FindGameObjectWithTag("House");        
         attackTimer = attackCoolDown;
         knockbackTimer = knockBackTime;
     }

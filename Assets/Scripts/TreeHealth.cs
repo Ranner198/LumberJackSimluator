@@ -11,9 +11,12 @@ public class TreeHealth : MonoBehaviour {
     public Color EnemyColor;
     public Color[] defaultTint;
 
+    public HealthBar hb;
+
     public void TakeDamage(int val, GameObject tag) {
 
         Health -= val;
+        hb.SetHealth(Health);
 
         if (Health <= 0)
         {
@@ -36,6 +39,7 @@ public class TreeHealth : MonoBehaviour {
             defaultTint[count] = mat.color;
             count++;
         }
+        hb.SetHealth(Health);
     }
 
     IEnumerator Flash(int flashCount, GameObject tag)
