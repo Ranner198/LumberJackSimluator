@@ -6,7 +6,7 @@ public class EnemyClass {
 
     private int Health;
     private Vector3 SpawnPoint;
-
+     
 
     public EnemyClass() { }
 

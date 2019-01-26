@@ -6,7 +6,7 @@ public class HealthBar : MonoBehaviour {
 
     public GameObject[] healthBarObjects;
 
-    void Start()
+    void Start() 
     {
         InvokeRepeating("UpdateArray", 0.1f, 0.1f);
     }

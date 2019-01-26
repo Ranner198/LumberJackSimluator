@@ -38,6 +38,7 @@ public class TreeHealth : MonoBehaviour {
         }
     }
 
+
     IEnumerator Flash(int flashCount, GameObject tag)
     {
         int flashCounter = 0;
