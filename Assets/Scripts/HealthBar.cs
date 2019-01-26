@@ -17,6 +17,6 @@ public class HealthBar : MonoBehaviour {
     }
 
     void UpdateArray() {
-        GameObject[] objects = GetComponents<HealthBarObject>() as GameObject;
+        GameObject[] objects = FindObjectsOfType(typeof(HealthBarObject)) as GameObject;
     }
 }
