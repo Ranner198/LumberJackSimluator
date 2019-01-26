@@ -8,13 +8,17 @@ public class EnemyController : MonoBehaviour {
     public int health = 100;
     public float raycastLength = 3;
     public float attackCoolDown = 3;
-    public float knockBackEffect = 2;
+    public float knockBackAmount = 2;
+    public float knockBackTime = 1.5f;
 
     private GameObject house;
     private Vector3 SpawnPoint;
     private Rigidbody rb;
     private float attackTimer;
-    
+
+    private bool knockback = false;
+    private float knockbackTimer;
+
     EnemyClass enemy;
 
     void Start()
@@ -23,6 +27,7 @@ public class EnemyController : MonoBehaviour {
         house = GameObject.FindGameObjectWithTag("House");
         enemy = new EnemyClass(health, SpawnPoint);
         attackTimer = attackCoolDown;
+        knockbackTimer = knockBackTime;
     }
 
     void Update()
@@ -53,8 +58,24 @@ public class EnemyController : MonoBehaviour {
         }
         else
         {
-            transform.LookAt(house.transform.position);
-            rb.velocity = GetDirection(house.transform.position).normalized * Time.deltaTime * speed * 100;
+            //Fix look direction
+            if (!knockback)
+            {
+                Vector3 tempHolder = house.transform.position;
+                tempHolder.y = transform.position.y;
+                transform.LookAt(tempHolder);
+                rb.velocity = GetDirection(house.transform.position).normalized * Time.deltaTime * speed * 100;
+            }
+            else
+            {
+                if (knockbackTimer >= 0)
+                    knockbackTimer -= Time.deltaTime;
+                if (knockbackTimer < 0)
+                {
+                    knockback = false;
+                    knockbackTimer = knockBackTime;
+                }
+            }
         }
 
         if (enemy.GetHealth() <= 0)
@@ -86,6 +107,8 @@ public class EnemyController : MonoBehaviour {
         if (coll.gameObject.tag == "Bullet")
         {
             TakeDamage(50);
+            knockback = true;
+            rb.AddForce((coll.gameObject.transform.position - transform.position).normalized * knockBackAmount, ForceMode.Impulse);
         }
     }
 }

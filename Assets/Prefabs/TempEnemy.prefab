@@ -9,21 +9,21 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1820769492228642}
+  m_RootGameObject: {fileID: 1362900190564088}
   m_IsPrefabAsset: 1
---- !u!1 &1820769492228642
+--- !u!1 &1362900190564088
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4064097164877956}
-  - component: {fileID: 33187176749539494}
-  - component: {fileID: 23719991260804456}
-  - component: {fileID: 65941543658666012}
-  - component: {fileID: 54450107225492572}
-  - component: {fileID: 114938514756954812}
+  - component: {fileID: 4129533929272432}
+  - component: {fileID: 33187795012531688}
+  - component: {fileID: 23382105338412834}
+  - component: {fileID: 54564673151654904}
+  - component: {fileID: 114055463462188656}
+  - component: {fileID: 65958621391333084}
   m_Layer: 0
   m_Name: TempEnemy
   m_TagString: Enemy
@@ -31,25 +31,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4064097164877956
+--- !u!4 &4129533929272432
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1820769492228642}
+  m_GameObject: {fileID: 1362900190564088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.74, y: 1.59, z: -7.62}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalPosition: {x: 9.8, y: 1.493, z: -4.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23719991260804456
+--- !u!23 &23382105338412834
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1820769492228642}
+  m_GameObject: {fileID: 1362900190564088}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -79,46 +79,46 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33187176749539494
+--- !u!33 &33187795012531688
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1820769492228642}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54450107225492572
+  m_GameObject: {fileID: 1362900190564088}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54564673151654904
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1820769492228642}
+  m_GameObject: {fileID: 1362900190564088}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.1
-  m_AngularDrag: 0.1
+  m_Drag: 2
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
---- !u!65 &65941543658666012
+--- !u!65 &65958621391333084
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1820769492228642}
+  m_GameObject: {fileID: 1362900190564088}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114938514756954812
+  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &114055463462188656
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1820769492228642}
+  m_GameObject: {fileID: 1362900190564088}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87bdf94c5697eb94fa5b2d1d80d1ad5e, type: 3}
@@ -128,3 +128,5 @@ MonoBehaviour:
   health: 100
   raycastLength: 3
   attackCoolDown: 3
+  knockBackAmount: 4
+  knockBackTime: 4

@@ -13,7 +13,7 @@ public class SpawnerController : MonoBehaviour {
     private int index;
 
 	void Start () {
-        InvokeRepeating("Checker", 2, 3f);
+        InvokeRepeating("Checker", 5, 3f);
 	}
 	
 	// Update is called once per frame
@@ -26,30 +26,50 @@ public class SpawnerController : MonoBehaviour {
         children = gameObject.transform.childCount;
 
         if (children <= 0)
-        {
-            index = 0;
-            spawnNum++;
-            StartCoroutine("Spawn");
+        {        
+            StartCoroutine(Spawn ());
         }
     }
 
     IEnumerator Spawn() {
 
-        while (index < spawnNum)
-        {
-            yield return new WaitForSeconds(coolDownSpawn);
+        for (index = 0; index < spawnNum; index++)
+        { 
             index++;
-            GameObject temp = Instantiate(enemyPrefab, new Vector3(spawnPositionParamaters * Randomizer(), 2, spawnPositionParamaters * Randomizer()), Quaternion.identity);
-            temp.name = "Enemy: " + index;
+            yield return new WaitForSeconds(coolDownSpawn);
+            Vector3 spawnPosition = BuildSpawnPoint();
+
+            GameObject temp = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+            temp.name = "Enemy";
             temp.transform.parent = gameObject.transform;
+            yield return new WaitForSeconds(coolDownSpawn);
         }
         if (index >= spawnNum)
+        {
             StopCoroutine("Spawn");
+            spawnNum++;
+        }
+    }
+
+    Vector3 BuildSpawnPoint() {
+        var x = Randomizer();
+        var z = Randomizer();
+
+        while (x == 0 && z == 0)
+        {
+            x = Randomizer();
+            z = Randomizer();
+        }
+
+        return new Vector3(spawnPositionParamaters * x, 2, spawnPositionParamaters * z);
     }
 
     int Randomizer() {
         float temp = Random.Range(0, 100);
-        if (temp >= 50)
+
+        if (temp < 33)
+            return 0;
+        else if (temp >= 33 && temp < 66)
             return -1;
         else
             return 1;

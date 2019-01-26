@@ -14,8 +14,10 @@ public class TreeHealth : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-
-        print("Tree took damage...");
     }
 
+    public int GetHealth()
+    {
+        return this.Health;
+    }
 }
