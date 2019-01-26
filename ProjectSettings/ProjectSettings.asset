@@ -645,12 +645,13 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 1
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: bdbe7be0-9710-43cb-a0a2-423bc8cb0ed1
+  cloudProjectId: 7fe96f13-4eb0-4506-9ffb-aca9cd57742e
   projectName: LumberjackSimulator
-  organizationId: ranner198
+  organizationId: spinning-chair-sudios
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
