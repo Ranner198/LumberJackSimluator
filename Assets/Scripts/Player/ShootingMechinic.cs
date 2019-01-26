@@ -9,7 +9,7 @@ public class ShootingMechinic : MonoBehaviour {
 	void Update () {
         if (Input.GetMouseButtonDown(0))
         {
-            GameObject Bullet = Instantiate(bullet, transform.position + transform.forward, transform.rotation);
+            GameObject Bullet = Instantiate(bullet, transform.position + transform.forward * 3, transform.rotation);
             Destroy(Bullet, 6f);
         }     
 	}

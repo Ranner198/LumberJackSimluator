@@ -9,7 +9,7 @@ public class SpawnerController : MonoBehaviour {
     public GameObject enemyPrefab;
 
     private int children;
-    private float spawnPositionParamaters = 39;
+    private float spawnPositionParamaters = 45;
     private int index;
 
 	void Start () {
@@ -61,7 +61,7 @@ public class SpawnerController : MonoBehaviour {
             z = Randomizer();
         }
 
-        return new Vector3(spawnPositionParamaters * x, 2, spawnPositionParamaters * z);
+        return new Vector3(spawnPositionParamaters * x, 0, spawnPositionParamaters * z);
     }
 
     int Randomizer() {
