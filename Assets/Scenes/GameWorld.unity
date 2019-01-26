@@ -1299,6 +1299,12 @@ Prefab:
       propertyPath: startColor.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114255786922747882, guid: fd071ed830481d24eb5f9d2affcb7384,
+        type: 2}
+      propertyPath: healthSliderPrefab
+      value: 
+      objectReference: {fileID: 114615393243230002, guid: d003ac2184220e5449a912b3b8655a76,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd071ed830481d24eb5f9d2affcb7384, type: 2}
   m_IsPrefabAsset: 0
