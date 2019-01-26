@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114039486538892466}
   - component: {fileID: 136595805183409672}
   - component: {fileID: 223137754297051640}
+  - component: {fileID: 114255786922747882}
   m_Layer: 0
   m_Name: snowmanFancyEnemy
   m_TagString: Untagged
@@ -109,6 +110,7 @@ MonoBehaviour:
   defaultTint: []
   flashCount: 6
   interval: 0.3
+  hb: {fileID: 114255786922747882}
 --- !u!114 &114129067293553938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -129,6 +131,22 @@ MonoBehaviour:
   knockBackTime: 2
   rb: {fileID: 0}
   knockback: 0
+--- !u!114 &114255786922747882
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1135964854894696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f14db1097666544b7cc4600295e17c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSliderPrefab: {fileID: 114615393243230002, guid: d003ac2184220e5449a912b3b8655a76,
+    type: 2}
+  startColor: {r: 1, g: 0.04892756, b: 0, a: 0}
+  finishColor: {r: 0, g: 1, b: 0.1510973, a: 0}
+  heightOffset: 16
 --- !u!136 &136595805183409672
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -169,7 +187,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1135964854894696}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -21.437649}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -177,6 +195,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -9.3030205, y: 0.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
