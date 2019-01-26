@@ -17,7 +17,7 @@ public class HealthBar : MonoBehaviour {
 
     private int healthReference;
 
-    void Start()
+    void Start() 
     {
         Canvas = GetComponent<Canvas>();
         HealthSlider = Instantiate(healthSliderPrefab, transform);
