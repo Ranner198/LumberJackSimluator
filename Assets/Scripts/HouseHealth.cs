@@ -10,9 +10,12 @@ public class HouseHealth : MonoBehaviour {
     public int flashCount = 6;
     public float interval = 0.4f;
 
-    /*
+    public HealthBar hb;
+
     void Start()
     {
+        hb.SetHealth(Health);
+        /*
         defaultTint = new Color[gameObject.transform.GetChild(0).GetChild(0).GetComponents<Renderer>().Length + 1];
 
         var count = 0;
@@ -21,11 +24,12 @@ public class HouseHealth : MonoBehaviour {
             defaultTint[count] = mat.color;
             count++;
         }
+        */
     }
-    */
     public void TakeDamage(int val) {
 
         Health -= val;
+        hb.SetHealth(Health);
         //StartCoroutine(Flash(flashCount));
     }
 
