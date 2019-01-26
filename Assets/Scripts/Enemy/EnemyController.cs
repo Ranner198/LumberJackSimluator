@@ -7,9 +7,10 @@ public class EnemyController : MonoBehaviour {
     public float speed = 2.5f;
     public int health = 100;
     public float raycastLength = 3;
+    public float offsetRaycastHeight = 2;
     public float attackCoolDown = 3;
     public float knockBackAmount = 2;
-    public float knockBackTime = 1.5f;
+    public float knockBackTime = 1.5f;    
 
     private GameObject house;
     private Vector3 SpawnPoint;
@@ -32,9 +33,12 @@ public class EnemyController : MonoBehaviour {
 
     void Update()
     {
+        Vector3 raycastPostion = transform.position;
+        raycastPostion.y = offsetRaycastHeight;
+
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.forward, out hit, raycastLength))
+        if (Physics.Raycast(raycastPostion, transform.forward, out hit, raycastLength))
         {
             if (hit.transform.tag == "House" || hit.transform.tag == "Tree")
             {
@@ -54,7 +58,6 @@ public class EnemyController : MonoBehaviour {
             {
             }
            //Draw the ray
-            Debug.DrawRay(transform.position, transform.forward * raycastLength, Color.red);
         }
         else
         {
@@ -77,6 +80,9 @@ public class EnemyController : MonoBehaviour {
                 }
             }
         }
+
+        Debug.DrawRay(raycastPostion, transform.forward * raycastLength, Color.red);
+
 
         if (enemy.GetHealth() <= 0)
         {

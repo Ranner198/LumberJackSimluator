@@ -118,7 +118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   health: 100
-  raycastLength: 3
+  raycastLength: 6
+  offsetRaycastHeight: 4.5
   attackCoolDown: 3
   knockBackAmount: 4
   knockBackTime: 4
