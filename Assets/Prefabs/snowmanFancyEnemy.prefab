@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 136595805183409672}
   - component: {fileID: 223137754297051640}
   - component: {fileID: 114255786922747882}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: snowmanFancyEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30f22a5d9ae0a7a4ab96bcb4031623e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageColor: {r: 1, g: 0, b: 0, a: 0}
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
   defaultTint: []
   flashCount: 6
   interval: 0.3
@@ -126,7 +126,7 @@ MonoBehaviour:
   health: 100
   raycastLength: 6
   offsetRaycastHeight: 4.5
-  attackCoolDown: 3
+  attackCoolDown: 1
   knockBackAmount: 4
   knockBackTime: 2
   rb: {fileID: 0}
@@ -144,9 +144,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthSliderPrefab: {fileID: 114615393243230002, guid: d003ac2184220e5449a912b3b8655a76,
     type: 2}
-  startColor: {r: 1, g: 0.04892756, b: 0, a: 0}
-  finishColor: {r: 0, g: 1, b: 0.1510973, a: 0}
-  heightOffset: 16
+  startColor: {r: 1, g: 0.04892756, b: 0, a: 1}
+  finishColor: {r: 0, g: 1, b: 0.1510973, a: 1}
+  heightOffset: 10
+  Size: 1
 --- !u!136 &136595805183409672
 CapsuleCollider:
   m_ObjectHideFlags: 1

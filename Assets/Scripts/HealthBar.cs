@@ -25,7 +25,7 @@ public class HealthBar : MonoBehaviour {
         Vector3 scale = HealthSlider.transform.localScale;
         scale *= Size;
         HealthSlider.transform.localScale = scale;
-        HealthSlider.transform.parent = Canvas.transform;
+        HealthSlider.transform.SetParent(Canvas.transform);
         fillColor = HealthSlider.transform.GetChild(1).GetChild(0).GetComponent<Image>();
     }
 
@@ -37,7 +37,7 @@ public class HealthBar : MonoBehaviour {
         return this.healthReference;
     }
 
-    void Update()
+    void LateUpdate()
     {
         HealthSlider.transform.LookAt(2 * Camera.main.transform.position);
 

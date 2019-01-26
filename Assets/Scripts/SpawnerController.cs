@@ -41,7 +41,7 @@ public class SpawnerController : MonoBehaviour {
 
             GameObject temp = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
             temp.name = "Enemy";
-            temp.transform.parent = gameObject.transform;
+            temp.transform.SetParent(gameObject.transform);
             yield return new WaitForSeconds(coolDownSpawn);
         }
         if (index >= spawnNum)

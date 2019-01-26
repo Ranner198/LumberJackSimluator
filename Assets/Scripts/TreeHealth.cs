@@ -32,6 +32,7 @@ public class TreeHealth : MonoBehaviour {
     }
 
     void Start() {
+        hb.SetHealth(Health);
         defaultTint = new Color[gameObject.GetComponent<Renderer>().materials.Length];
         var count = 0;
         foreach (Material mat in gameObject.GetComponent<Renderer>().materials)
@@ -39,7 +40,6 @@ public class TreeHealth : MonoBehaviour {
             defaultTint[count] = mat.color;
             count++;
         }
-        hb.SetHealth(Health);
     }
 
 
@@ -49,7 +49,7 @@ public class TreeHealth : MonoBehaviour {
         while (flashCounter < flashCount)
         {
             if (tag.tag == "Player")
-            {        
+            {
                 foreach (Material mat in gameObject.GetComponent<Renderer>().materials)
                 {
                     mat.color = PlayerColor;
@@ -65,7 +65,6 @@ public class TreeHealth : MonoBehaviour {
                 }
 
                 yield return new WaitForSeconds(interval);
-
                 flashCounter++;
             }
             else

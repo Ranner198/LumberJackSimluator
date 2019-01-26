@@ -6,11 +6,21 @@ public class ShootingMechinic : MonoBehaviour {
 
     public GameObject bullet;
 
+    public float timer;
+    private float _timer;
+
 	void Update () {
-        if (Input.GetMouseButtonDown(0))
+
+        if (_timer >= 0)
+            _timer -= Time.deltaTime;
+        else
         {
-            GameObject Bullet = Instantiate(bullet, transform.position + transform.forward * 3, transform.rotation);
-            Destroy(Bullet, 6f);
-        }     
+            if (Input.GetMouseButtonDown(0))
+            {               
+                GameObject Bullet = Instantiate(bullet, transform.position + transform.forward * 3, transform.rotation);
+                Destroy(Bullet, 6f);
+                _timer = timer;
+            }
+        }
 	}
 }
