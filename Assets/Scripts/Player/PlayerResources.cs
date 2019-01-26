@@ -20,4 +20,8 @@ public class PlayerResources : MonoBehaviour {
     public void AddWood(int val) {
         wood += val;
     }
+
+    public int GetWood() {
+        return this.wood;
+    }
 }

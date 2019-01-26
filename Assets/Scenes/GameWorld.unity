@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -647,6 +647,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1880874341035748, guid: 220c6f8b2a753a244b5a80d8ddc44d5d,
     type: 2}
   m_PrefabInternal: {fileID: 2045957581}
+--- !u!114 &1527603135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1527603134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6520817745c9db4479938233a73eb1c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wood: 0
+  woodText: {fileID: 1773002706}
+  fence: {fileID: 1035723585665692, guid: 0fab53d558e53ad42935d23f00e42e9d, type: 2}
+  lm:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &1676513215
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,7 +975,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4195181932293306, guid: 220c6f8b2a753a244b5a80d8ddc44d5d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.52
+      value: 3.67
       objectReference: {fileID: 0}
     - target: {fileID: 4195181932293306, guid: 220c6f8b2a753a244b5a80d8ddc44d5d, type: 2}
       propertyPath: m_LocalPosition.z

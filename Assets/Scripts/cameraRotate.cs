@@ -8,15 +8,18 @@ public class cameraRotate : MonoBehaviour {
 
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (!FencePlacement.PlacementMode)
         {
-            angle += 90;
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            angle -= 90;
-        }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                angle += 90;
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                angle -= 90;
+            }
 
-        transform.rotation = Quaternion.Euler(0, angle, 0);
+            transform.rotation = Quaternion.Euler(0, angle, 0);
+        }
 	}
 }

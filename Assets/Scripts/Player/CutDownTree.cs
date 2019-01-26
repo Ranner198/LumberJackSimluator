@@ -11,8 +11,8 @@ public class CutDownTree : PlayerResources {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 coll.gameObject.GetComponent<TreeHealth>().TakeDamage(25);
-                if (coll.gameObject.GetComponent<TreeHealth>().GetHealth() <= 0)   
-                    AddWood();  
+                if (coll.gameObject.GetComponent<TreeHealth>().GetHealth() <= 0)
+                { } 
             }
         }
     }
