@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour {
 
-    public float speed = 2.5f;
+    public float speed = 8;
     public int health = 100;
-    public float raycastLength = 3;
-    public float offsetRaycastHeight = 2;
+    public float raycastLength = 6;
+    public float offsetRaycastHeight = 4.5f;
     public float attackCoolDown = 3;
-    public float knockBackAmount = 2;
-    public float knockBackTime = 1.5f;    
+    public float knockBackAmount = 4;
+    public float knockBackTime = 4;    
 
     private GameObject house;
     private Vector3 SpawnPoint;
-    private Rigidbody rb;
+    [HideInInspector]
+    public Rigidbody rb;
     private float attackTimer;
-
-    private bool knockback = false;
+    [HideInInspector]
+    public bool knockback = false;
     private float knockbackTimer;
 
-    EnemyClass enemy;
+    public EnemyClass enemy;
 
     void Start()
     {
@@ -101,20 +102,6 @@ public class EnemyController : MonoBehaviour {
         if (target.tag == "House")
             target.GetComponent<HouseHealth>().TakeDamage(5);
         if (target.tag == "Tree")
-            target.GetComponent<TreeHealth>().TakeDamage(25);
-    }
-
-    void TakeDamage(int val) {
-        enemy.TakeDamage(50);        
-    }
-
-    void OnCollisionEnter(Collision coll)
-    {
-        if (coll.gameObject.tag == "Bullet")
-        {
-            TakeDamage(50);
-            knockback = true;
-            rb.AddForce((coll.gameObject.transform.position - transform.position).normalized * knockBackAmount, ForceMode.Impulse);
-        }
+            target.GetComponent<TreeHealth>().TakeDamage(25, gameObject);
     }
 }

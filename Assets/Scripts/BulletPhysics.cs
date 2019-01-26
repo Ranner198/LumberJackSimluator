@@ -16,8 +16,9 @@ public class BulletPhysics : MonoBehaviour {
         rb.velocity = transform.forward * Time.deltaTime * 60 * speed; 
 	}
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision coll)
     {
-        Destroy(gameObject);   
+        if (coll.gameObject.tag != "Rock")
+            Destroy(gameObject);   
     }
 }

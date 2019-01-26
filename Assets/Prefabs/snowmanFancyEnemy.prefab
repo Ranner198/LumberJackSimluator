@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23494683548297562}
   - component: {fileID: 54899476412796162}
   - component: {fileID: 114129067293553938}
+  - component: {fileID: 114039486538892466}
   - component: {fileID: 136595805183409672}
   m_Layer: 0
   m_Name: snowmanFancyEnemy
@@ -105,6 +106,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!114 &114039486538892466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1135964854894696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f22a5d9ae0a7a4ab96bcb4031623e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageColor: {r: 1, g: 0, b: 0, a: 0}
+  defaultTint: []
+  flashCount: 6
+  interval: 0.3
 --- !u!114 &114129067293553938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,7 +138,9 @@ MonoBehaviour:
   offsetRaycastHeight: 4.5
   attackCoolDown: 3
   knockBackAmount: 4
-  knockBackTime: 4
+  knockBackTime: 2
+  rb: {fileID: 0}
+  knockback: 0
 --- !u!136 &136595805183409672
 CapsuleCollider:
   m_ObjectHideFlags: 1

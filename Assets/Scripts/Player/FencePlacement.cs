@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
-public class FencePlacement : PlayerResources {
+public class FencePlacement : MonoBehaviour {
 
     public GameObject fence;
     public LayerMask lm;
@@ -11,8 +12,35 @@ public class FencePlacement : PlayerResources {
     private GameObject temp;
     private int angle;
 
+
+    private int wood;
+
+    public Text woodText;
+
+    public void AddWood()
+    {
+        wood += 1;
+    }
+
+    public void AddWood(int val)
+    {
+        wood += val;
+    }
+
+    public int GetWood()
+    {
+        return wood;
+    }
+
+    public void SubtractWood()
+    {
+        wood -= 1;
+    }
+
     void Update()
     {
+        woodText.text = "Wood: " + wood.ToString();
+
         if (Input.GetMouseButtonDown(1))
             PlacementMode = !PlacementMode;
 
@@ -41,13 +69,30 @@ public class FencePlacement : PlayerResources {
                         {
                             Instantiate(fence, holderPosition, Quaternion.Euler(0, angle, 0));
                             PlacementMode = false;
+                            SubtractWood();
                         }
                     }
                 }
             }
         }
         else
-            temp = null;
+        {
+            Destroy(temp);
+        }
     }
 
+    void OnTriggerStay(Collider coll)
+    {
+        if (coll.tag == "Tree")
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                coll.gameObject.GetComponent<TreeHealth>().TakeDamage(25, gameObject);
+                if (coll.gameObject.GetComponent<TreeHealth>().GetHealth() <= 0)
+                {
+                    AddWood();
+                }
+            }
+        }
+    }
 }
