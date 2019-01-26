@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -27,4 +27,4 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0
   font: {fileID: 12800000, guid: b51a3e520f9164da198dc59c8acfccd6, type: 3}
-  textColor: {r: 0.2310405, g: 0.13624568, b: 0.2647059, a: 1}
+  textColor: {r: 1, g: 1, b: 1, a: 1}
