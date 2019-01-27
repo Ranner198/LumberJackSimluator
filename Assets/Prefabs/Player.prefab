@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4620797332076578}
   - component: {fileID: 137443505856893106}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,7 +35,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4013524791455280}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: shoulderRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4776162938635266}
   - component: {fileID: 137575768977617170}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,7 +66,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4108764606391364}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: handRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4108852419374022}
   - component: {fileID: 137538422450783780}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hairMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4597913902701266}
   - component: {fileID: 137001208015995214}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4893729788674912}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: handLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4492218647483582}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hipLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4417494303017970}
   - component: {fileID: 137330509310446106}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4821801137387786}
   - component: {fileID: 137230154487355880}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: eyebrows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4721093869086334}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: elbowRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4237850366123896}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: sternum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4593467193113590}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: ankleRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4518995817478242}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: kneeLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4593746659146748}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4839108793897764}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: shoulderLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4400371113860300}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: kneeRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4341782876128252}
   - component: {fileID: 137212842296152538}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: moustache
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4355438136426468}
   - component: {fileID: 137158689074621950}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4369137744889818}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: ThrowingPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4989844037847960}
   - component: {fileID: 137941759708810592}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hairTwigs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4490050510355698}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: ankleLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4642962234188136}
   - component: {fileID: 137055534652572842}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: nose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4868499720276868}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: elbowLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4184264926240476}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: lumberJack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,7 +405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4832198577976658}
   - component: {fileID: 137041824339028568}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: scarf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4845580383818740}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: head 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4687893538222836}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hipRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 54181660587193960}
   - component: {fileID: 136268170229154330}
   - component: {fileID: 65742779223382080}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -929,7 +929,7 @@ MonoBehaviour:
   lm:
     serializedVersion: 2
     m_Bits: 512
-  FencePlancement: 0
+  FencePlancement: 1.8
   woodText: {fileID: 0}
 --- !u!114 &114655606721081384
 MonoBehaviour:
@@ -991,8 +991,8 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100006, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
-  - {fileID: 2100000, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
+  - {fileID: 2100000, guid: 7b6bdf9a4dd6adb40883eb5ff1656972, type: 2}
+  - {fileID: 2100000, guid: 33f693a3fac81ff4c8553e8743389ff0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1050,7 +1050,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100008, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
+  - {fileID: 2100000, guid: e51ab14abe0736942b7249dcfa1c8b7b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1102,7 +1102,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100006, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
+  - {fileID: 2100000, guid: 7b6bdf9a4dd6adb40883eb5ff1656972, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1154,9 +1154,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
-  - {fileID: 2100002, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
-  - {fileID: 2100004, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
+  - {fileID: 2100000, guid: 33f693a3fac81ff4c8553e8743389ff0, type: 2}
+  - {fileID: 2100000, guid: 639c71912a202fb4fbb3ae34b518e531, type: 2}
+  - {fileID: 2100000, guid: 94d3aae6b57e60040aa74c34a47fb9b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1213,7 +1213,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100010, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
+  - {fileID: 2100000, guid: 407ca8284ed38674184af94fff82e531, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1265,7 +1265,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100010, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
+  - {fileID: 2100000, guid: 407ca8284ed38674184af94fff82e531, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1317,8 +1317,8 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
-  - {fileID: 2100004, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
+  - {fileID: 2100000, guid: 639c71912a202fb4fbb3ae34b518e531, type: 2}
+  - {fileID: 2100000, guid: e51ab14abe0736942b7249dcfa1c8b7b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1377,7 +1377,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
+  - {fileID: 2100000, guid: e51ab14abe0736942b7249dcfa1c8b7b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1429,7 +1429,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100010, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
+  - {fileID: 2100000, guid: e51ab14abe0736942b7249dcfa1c8b7b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1481,7 +1481,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100006, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
+  - {fileID: 2100000, guid: 7b6bdf9a4dd6adb40883eb5ff1656972, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1533,7 +1533,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100010, guid: 166374507ee2fbe48abd8deb88fdd1be, type: 3}
+  - {fileID: 2100000, guid: 407ca8284ed38674184af94fff82e531, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

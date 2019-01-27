@@ -90,7 +90,37 @@ ModelImporter:
     13700016: nose
     13700018: scarf
     13700020: torso
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: beltMAT
+    second: {fileID: 2100000, guid: 94d3aae6b57e60040aa74c34a47fb9b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hairMAT
+    second: {fileID: 2100000, guid: 407ca8284ed38674184af94fff82e531, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pantsMAT
+    second: {fileID: 2100000, guid: 639c71912a202fb4fbb3ae34b518e531, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scarfMAT
+    second: {fileID: 2100000, guid: e51ab14abe0736942b7249dcfa1c8b7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirtMAT
+    second: {fileID: 2100000, guid: 33f693a3fac81ff4c8553e8743389ff0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skinMAT
+    second: {fileID: 2100000, guid: 7b6bdf9a4dd6adb40883eb5ff1656972, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
