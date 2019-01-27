@@ -928,7 +928,7 @@ MonoBehaviour:
   fence: {fileID: 1670918915597350, guid: daa737ee31acfd3469979b1d1b2bbf02, type: 2}
   lm:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 16896
   FencePlancement: 1.8
   woodText: {fileID: 0}
 --- !u!114 &114655606721081384
@@ -1318,7 +1318,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 639c71912a202fb4fbb3ae34b518e531, type: 2}
-  - {fileID: 2100000, guid: e51ab14abe0736942b7249dcfa1c8b7b, type: 2}
+  - {fileID: 2100000, guid: 94d3aae6b57e60040aa74c34a47fb9b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1377,7 +1377,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: e51ab14abe0736942b7249dcfa1c8b7b, type: 2}
+  - {fileID: 2100000, guid: 639c71912a202fb4fbb3ae34b518e531, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

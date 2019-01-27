@@ -4,26 +4,71 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
+    public static CameraShake instance = null;
 
-    public static CameraShake instance = null;              //Static instance of GameManager which allows it to be accessed by any other script.                    //Store a reference to our BoardManager which will set up the level.
-    private int level = 3;                                  //Current level number, expressed in game as "Day 1".
+    // How long the object should shake for.
+    public float shakeDuration = 0f;
+    private float shakeTime;
 
-    //Awake is always called before any Start functions
+    // Amplitude of the shake. A larger value shakes the camera harder.
+    public float amout = 0.1f;
+    private float shakeAmount;
+    public float decreaseFactor = 1.0f;
+
+    public static bool shake = false;
+
+    Vector3 originalPos;
+
     void Awake()
     {
-        /*
-        //Check if instance already exists
         if (instance == null)
-
-            //if not, set instance to this
             instance = this;
 
-        //If instance already exists and it's not this:
         else if (instance != this)
-
-            //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
             Destroy(gameObject);
-            */
+    }
+
+    private void Start()
+    {
+        shakeTime = shakeDuration;
+        shakeAmount = amout;
+    }
+
+    void Update()
+    {
+        if (shake)
+        {
+            if (shakeTime >= 0)
+            {
+                transform.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
+                shakeTime -= Time.deltaTime * decreaseFactor;
+            }
+            else
+            {
+                shakeAmount = amout;
+                shakeTime = shakeDuration;
+                shakeTime = shakeDuration;
+                transform.localPosition = originalPos;
+                shake = false;
+            }
+        }
+    }
+
+    public void Shake() {
+        shake = true;
+    }
+
+    public void Shake(float amt)
+    {
+        shake = true;
+        this.shakeAmount = amt;
+    }
+
+    public void Shake(float amt, float time)
+    {
+        shake = true;
+        this.shakeAmount = amt;
+        this.shakeTime = time;
     }
 }
 

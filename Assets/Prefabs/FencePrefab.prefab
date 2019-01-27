@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4942061892575676}
   - component: {fileID: 33254108365864934}
   - component: {fileID: 23920951133579938}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: fence_strong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114824602484707126}
   - component: {fileID: 114099524672228362}
   - component: {fileID: 223749085772175612}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: FencePrefab
   m_TagString: Fence
   m_Icon: {fileID: 0}

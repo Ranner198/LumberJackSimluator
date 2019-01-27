@@ -21,6 +21,7 @@ public class ShootingMechinic : MonoBehaviour {
                 GameObject Bullet = Instantiate(bullet, spawnPosition.transform.position, transform.rotation);
                 Destroy(Bullet, 6f);
                 _timer = timer;
+                CameraShake.instance.Shake(.15f, .1f);
             }
         }
 	}

@@ -25,6 +25,8 @@ public class FenceHealth : MonoBehaviour
         }
 
         StartCoroutine(Flash(flashCount, tag));
+
+        CameraShake.instance.Shake(.2f, .5f);
     }
 
     public int GetHealth()

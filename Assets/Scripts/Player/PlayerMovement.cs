@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour {
                 if (newPos.magnitude - temp.magnitude < rot.magnitude)
                     anim.SetFloat("Direction", -1);
                 else
-                    anim.SetFloat("Direction", 1);
+                    anim.SetFloat("Direction", 1);  
             }
         }
 
