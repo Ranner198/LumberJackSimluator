@@ -37,7 +37,7 @@ public class EnemyController : MonoBehaviour {
         knockbackTimer = knockBackTime;        
     }
 
-    void Update()
+    void FixedUpdate()
     {
         transform.LookAt(house.transform.position);
 
