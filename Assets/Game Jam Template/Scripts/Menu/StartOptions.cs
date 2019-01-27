@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class StartOptions : MonoBehaviour {
 
-
     public MenuSettings menuSettingsData;
 	public int sceneToStart = 1;										//Index number in build settings of scene to load if changeScenes is true
 	public bool changeScenes;											//If true, load a new scene when Start is pressed, if false, fade out UI and continue in single scene
@@ -140,6 +139,11 @@ public class StartOptions : MonoBehaviour {
         }
 
         HideDelayed();
+
+        GameObject Spawner = GameObject.Find("spawner");
+
+        Spawner.GetComponent<SpawnerController>().StartSpawn();
+
         Debug.Log("Coroutine done. Game started in same scene! Put your game starting stuff here.");
     }
 

@@ -12,13 +12,8 @@ public class SpawnerController : MonoBehaviour {
     private float spawnPositionParamaters = 45;
     private int index;
 
-	void Start () {
-        InvokeRepeating("Checker", 5, 3f);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public void StartSpawn () {
+        InvokeRepeating("Checker", 3, 3f);
 	}
 
     void Checker() {
