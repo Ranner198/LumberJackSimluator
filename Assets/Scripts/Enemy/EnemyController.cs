@@ -22,6 +22,8 @@ public class EnemyController : MonoBehaviour {
     public bool knockback = false;
     private float knockbackTimer;
 
+    private Animator anim;
+
     public EnemyClass enemy;
 
     void Awake()
@@ -34,7 +36,8 @@ public class EnemyController : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         house = GameObject.FindGameObjectWithTag("House");        
         attackTimer = attackCoolDown;
-        knockbackTimer = knockBackTime;        
+        knockbackTimer = knockBackTime;
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -59,13 +62,13 @@ public class EnemyController : MonoBehaviour {
                     attackTimer = attackCoolDown;
                 }
 
+                anim.Play("AttackAnimation");
+
                 //Look at the mouse position
                 rb.velocity = Vector3.zero;
             }
-            else if (hit.transform.tag == "Rock")
-            {
-            }
-           //Draw the ray
+            else
+                anim.Play("IdleAnim");
         }
         else
         {
@@ -87,6 +90,11 @@ public class EnemyController : MonoBehaviour {
                     knockbackTimer = knockBackTime;
                 }
             }
+
+            if (rb.velocity.magnitude > 2)
+                anim.Play("Walk");
+            else
+                anim.Play("Idle");
         }
 
         Debug.DrawRay(raycastPostion, transform.forward * raycastLength, Color.red);

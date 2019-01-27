@@ -67,7 +67,10 @@ public class FencePlacement : MonoBehaviour {
                     holderPosition = new Vector3((int)holderPosition.x, FencePlancement, (int)holderPosition.z);
 
                     if (temp == null)
+                    {
                         temp = Instantiate(fence, holderPosition, Quaternion.Euler(0, angle, 0));
+                        temp.GetComponent<BoxCollider>().enabled = false;
+                    }
 
                     temp.transform.rotation = Quaternion.Euler(0, angle, 0);
 
