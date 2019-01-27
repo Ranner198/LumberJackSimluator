@@ -14,9 +14,9 @@ public class EnemyDamage : MonoBehaviour {
     private EnemyController Controller;
 
     void Start()
-
     {
         Controller = gameObject.GetComponent<EnemyController>();
+        /*
         defaultTint = new Color[gameObject.GetComponent<Renderer>().materials.Length];
         var count = 0;        
         foreach (Material mat in gameObject.GetComponent<Renderer>().materials)
@@ -24,7 +24,8 @@ public class EnemyDamage : MonoBehaviour {
             defaultTint[count] = mat.color;
             count++;
         }
-        hb.SetHealth(Controller.enemy.GetHealth());
+        */
+        hb.SetHealth(100);
     }
 
     void TakeDamage(int val)
@@ -41,7 +42,7 @@ public class EnemyDamage : MonoBehaviour {
             Controller.knockback = true;
             Controller.rb.AddForce((coll.gameObject.transform.position - transform.position).normalized * Controller.knockBackAmount, ForceMode.Impulse);
 
-            StartCoroutine(Flash(flashCount));
+            //StartCoroutine(Flash(flashCount));
         }
     }
 

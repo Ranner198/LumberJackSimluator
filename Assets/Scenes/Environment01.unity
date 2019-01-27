@@ -2609,7 +2609,7 @@ GameObject:
   - component: {fileID: 242068454}
   - component: {fileID: 242068453}
   - component: {fileID: 242068452}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5746,7 +5746,7 @@ GameObject:
   - component: {fileID: 703169601}
   - component: {fileID: 703169600}
   - component: {fileID: 703169599}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6856,7 +6856,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 889099130}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -63.8}
+  m_LocalPosition: {x: 0, y: 0, z: -61.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 325215366}
@@ -6864,7 +6864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 46.9, y: 0}
+  m_AnchoredPosition: {x: 50.8, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &889099132
@@ -8577,7 +8577,7 @@ GameObject:
   - component: {fileID: 1073719342}
   - component: {fileID: 1073719341}
   - component: {fileID: 1073719340}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10308,7 +10308,7 @@ GameObject:
   - component: {fileID: 1324289744}
   - component: {fileID: 1324289743}
   - component: {fileID: 1324289742}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15328,6 +15328,16 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 114075231198574368, guid: 24b260aeafbf9d541a6b2f0204763aac,
+        type: 2}
+      propertyPath: woodText
+      value: 
+      objectReference: {fileID: 120598868}
+    - target: {fileID: 114075231198574368, guid: 24b260aeafbf9d541a6b2f0204763aac,
+        type: 2}
+      propertyPath: FencePlancement
+      value: 1.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24b260aeafbf9d541a6b2f0204763aac, type: 2}
   m_IsPrefabAsset: 0
@@ -15339,7 +15349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1983307414}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -880,7 +880,7 @@ MonoBehaviour:
   defaultTint: []
   flashCount: 6
   interval: 0.3
-  hb: {fileID: 0}
+  hb: {fileID: 114559305493387524}
 --- !u!114 &114559305493387524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -909,7 +909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87bdf94c5697eb94fa5b2d1d80d1ad5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 6
   health: 100
   raycastLength: 6
   offsetRaycastHeight: 4.5
