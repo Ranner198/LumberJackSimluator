@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour {
         anim = GetComponent<Animator>();
 	}
 
-    void Update()
+    void FixedUpdate()
     {
         Vector3 newPos = transform.position;
 
