@@ -25,11 +25,9 @@ public class PlayerMovement : MonoBehaviour {
     {
         Vector3 newPos = transform.position;
 
-        print(Camera.main.transform.rotation.y);
-
         //Movement input
         movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        Vector3 offset = Quaternion.Euler(0, centerPoint.transform.rotation.y * Mathf.Rad2Deg, 0) * movement;
+        Vector3 offset = Quaternion.Euler(0, centerPoint.transform.eulerAngles.y - 45, 0) * movement;
         //Apply Force to player
         rb.velocity = offset.normalized * Time.deltaTime * speed * 100;
 

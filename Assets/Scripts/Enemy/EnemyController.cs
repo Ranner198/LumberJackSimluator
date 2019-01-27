@@ -34,11 +34,13 @@ public class EnemyController : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         house = GameObject.FindGameObjectWithTag("House");        
         attackTimer = attackCoolDown;
-        knockbackTimer = knockBackTime;
+        knockbackTimer = knockBackTime;        
     }
 
     void Update()
     {
+        transform.LookAt(house.transform.position);
+
         Vector3 raycastPostion = transform.position;
         raycastPostion.y = offsetRaycastHeight;
 
@@ -46,7 +48,7 @@ public class EnemyController : MonoBehaviour {
 
         if (Physics.Raycast(raycastPostion, transform.forward, out hit, raycastLength))
         {
-            if (hit.transform.tag == "House" || hit.transform.tag == "Tree")
+            if (hit.transform.tag == "House" || hit.transform.tag == "Tree" || hit.transform.tag == "Fence")
             {
                 //PlayAttack Animation
                 if (attackTimer >= 0)
@@ -108,5 +110,7 @@ public class EnemyController : MonoBehaviour {
             target.GetComponent<HouseHealth>().TakeDamage(5);
         if (target.tag == "Tree")
             target.GetComponent<TreeHealth>().TakeDamage(25, gameObject);
+        if (target.tag == "Fence")
+            target.GetComponent<FenceHealth>().TakeDamage(17, gameObject);
     }
 }

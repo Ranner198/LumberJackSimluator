@@ -27,6 +27,7 @@ public class HealthBar : MonoBehaviour {
         HealthSlider.transform.localScale = scale;
         HealthSlider.transform.SetParent(Canvas.transform);
         fillColor = HealthSlider.transform.GetChild(1).GetChild(0).GetComponent<Image>();
+        healthSliderPrefab.value = 100;
     }
 
     public void SetHealth(int val)
