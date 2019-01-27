@@ -11,16 +11,24 @@ public class PlayerMovement : MonoBehaviour {
     public float topSpeed;
     public float speed = 6;
     public LayerMask lm;
+    public Vector3 temp;
+
+    private Animator anim;
 
     void Start () {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
 	}
 
     void Update()
     {
+        Vector3 newPos = transform.position;
+
+        print(Camera.main.transform.rotation.y);
+
         //Movement input
         movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        Vector3 offset = Quaternion.Euler(0, -45, 0) * movement;
+        Vector3 offset = Quaternion.Euler(0, Camera.main.transform.rotation.y * Mathf.Rad2Deg, 0) * movement;
         //Apply Force to player
         rb.velocity = offset.normalized * Time.deltaTime * speed * 100;
 
@@ -34,9 +42,20 @@ public class PlayerMovement : MonoBehaviour {
                 //Look at the mouse position
                 Vector3 rot = new Vector3(hit.point.x, transform.position.y, hit.point.z);
                 transform.LookAt(rot);
+
+                //Going in reverse
+                if (newPos.magnitude - temp.magnitude < rot.magnitude)
+                    anim.SetFloat("Direction", -1);
+                else
+                    anim.SetFloat("Direction", 1);
             }
-            else
-                transform.Rotate(Vector3.zero);
         }
+
+        if (movement.magnitude > 0.1f)
+            anim.Play("Walk");
+        else
+            anim.Play("Idle");
+
+        temp = newPos;
     }
 }

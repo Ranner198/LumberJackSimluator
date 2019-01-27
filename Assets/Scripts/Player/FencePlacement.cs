@@ -46,6 +46,14 @@ public class FencePlacement : MonoBehaviour {
 
         if (PlacementMode)
         {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                angle += 90;
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                angle -= 90;
+            }
 
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -55,10 +63,12 @@ public class FencePlacement : MonoBehaviour {
                 if (hit.transform.tag == "World")
                 {
                     Vector3 holderPosition = hit.point;
-                    holderPosition = new Vector3((int)holderPosition.x, 1, (int)holderPosition.z);
+                    holderPosition = new Vector3((int)holderPosition.x, 2.2f, (int)holderPosition.z);
 
                     if (temp == null)
                         temp = Instantiate(fence, holderPosition, Quaternion.Euler(0, angle, 0));
+
+                    temp.transform.rotation = Quaternion.Euler(0, angle, 0);
 
                     temp.transform.position = holderPosition;
 
@@ -72,7 +82,7 @@ public class FencePlacement : MonoBehaviour {
                             SubtractWood();
                         }
                     }
-                }
+                }                
             }
         }
         else

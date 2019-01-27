@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 166374507ee2fbe48abd8deb88fdd1be
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ankleLeft
+    100002: ankleRight
+    100004: arms
+    100006: elbowLeft
+    100008: elbowRight
+    100010: eyebrows
+    100012: hairMain
+    100014: hairTwigs
+    100016: handLeft
+    100018: handRight
+    100020: hat
+    100022: head
+    100024: head 1
+    100026: hipLeft
+    100028: hipRight
+    100030: kneeLeft
+    100032: kneeRight
+    100034: legs
+    100036: lumberJack
+    100038: //RootNode
+    100040: moustache
+    100042: nose
+    100044: root
+    100046: scarf
+    100048: shoulderLeft
+    100050: shoulderRight
+    100052: sternum
+    100054: torso
+    400000: ankleLeft
+    400002: ankleRight
+    400004: arms
+    400006: elbowLeft
+    400008: elbowRight
+    400010: eyebrows
+    400012: hairMain
+    400014: hairTwigs
+    400016: handLeft
+    400018: handRight
+    400020: hat
+    400022: head
+    400024: head 1
+    400026: hipLeft
+    400028: hipRight
+    400030: kneeLeft
+    400032: kneeRight
+    400034: legs
+    400036: lumberJack
+    400038: //RootNode
+    400040: moustache
+    400042: nose
+    400044: root
+    400046: scarf
+    400048: shoulderLeft
+    400050: shoulderRight
+    400052: sternum
+    400054: torso
+    2100000: shirtMAT
+    2100002: pantsMAT
+    2100004: beltMAT
+    2100006: skinMAT
+    2100008: scarfMAT
+    2100010: hairMAT
+    4300000: torso
+    4300002: head
+    4300004: nose
+    4300006: scarf
+    4300008: moustache
+    4300010: hat
+    4300012: eyebrows
+    4300014: hairTwigs
+    4300016: arms
+    4300018: legs
+    4300020: hairMain
+    7400000: Walk
+    7400002: Idle
+    9500000: //RootNode
+    13700000: arms
+    13700002: eyebrows
+    13700004: hairMain
+    13700006: hairTwigs
+    13700008: hat
+    13700010: head
+    13700012: legs
+    13700014: moustache
+    13700016: nose
+    13700018: scarf
+    13700020: torso
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 7
+      lastFrame: 7
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 15
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.14999999
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

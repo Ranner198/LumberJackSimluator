@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShootingMechinic : MonoBehaviour {
 
     public GameObject bullet;
+    public GameObject spawnPosition;
 
     public float timer;
     private float _timer;
@@ -17,7 +18,7 @@ public class ShootingMechinic : MonoBehaviour {
         {
             if (Input.GetMouseButtonDown(0))
             {               
-                GameObject Bullet = Instantiate(bullet, transform.position + transform.forward * 3, transform.rotation);
+                GameObject Bullet = Instantiate(bullet, spawnPosition.transform.position, transform.rotation);
                 Destroy(Bullet, 6f);
                 _timer = timer;
             }
