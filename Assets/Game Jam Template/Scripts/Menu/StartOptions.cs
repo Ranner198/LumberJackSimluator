@@ -39,6 +39,9 @@ public class StartOptions : MonoBehaviour {
         fadeImage.color = menuSettingsData.sceneChangeFadeColor;
 	}
 
+	public CanvasGroup GetCanvasGroup() {
+		return fadeOutImageCanvasGroup;
+	}
 
 	public void StartButtonClicked()
 	{
