@@ -13,7 +13,6 @@ public class PlayerMovement : MonoBehaviour {
     public LayerMask lm;
     public Vector3 temp;
     public GameObject centerPoint;
-
     private Animator anim;
 
     void Start () {

@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnerController : MonoBehaviour {
 
     public int spawnNum = 1;
+    public int wave = 1;
     public float coolDownSpawn = 1f;
     public GameObject enemyPrefab;
 
@@ -14,6 +15,7 @@ public class SpawnerController : MonoBehaviour {
 
 	public void StartSpawn () {
         InvokeRepeating("Checker", 3, 3f);
+        WaveText.ShowWave = true;
 	}
 
     void Checker() {
@@ -21,12 +23,16 @@ public class SpawnerController : MonoBehaviour {
         children = gameObject.transform.childCount;
 
         if (children <= 0)
-        {        
+        {
+            wave++;
+            WaveText.ShowWave = true;
             StartCoroutine(Spawn ());
         }
     } 
 
-    IEnumerator Spawn() {
+    IEnumerator Spawn() {        
+
+        yield return new WaitForSeconds(1);
 
         for (index = 0; index < spawnNum; index++)
         { 
