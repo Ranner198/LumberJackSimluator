@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour {
     public float speed = 6;
     public LayerMask lm;
     public Vector3 temp;
+    public GameObject centerPoint;
 
     private Animator anim;
 
@@ -28,7 +29,7 @@ public class PlayerMovement : MonoBehaviour {
 
         //Movement input
         movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        Vector3 offset = Quaternion.Euler(0, Camera.main.transform.rotation.y * Mathf.Rad2Deg, 0) * movement;
+        Vector3 offset = Quaternion.Euler(0, centerPoint.transform.rotation.y * Mathf.Rad2Deg, 0) * movement;
         //Apply Force to player
         rb.velocity = offset.normalized * Time.deltaTime * speed * 100;
 

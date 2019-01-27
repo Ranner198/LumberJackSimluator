@@ -7,6 +7,7 @@ public class FencePlacement : MonoBehaviour {
 
     public GameObject fence;
     public LayerMask lm;
+    public float FencePlancement;
     public static bool PlacementMode = false;
 
     private GameObject temp;
@@ -63,7 +64,7 @@ public class FencePlacement : MonoBehaviour {
                 if (hit.transform.tag == "World")
                 {
                     Vector3 holderPosition = hit.point;
-                    holderPosition = new Vector3((int)holderPosition.x, 2.2f, (int)holderPosition.z);
+                    holderPosition = new Vector3((int)holderPosition.x, FencePlancement, (int)holderPosition.z);
 
                     if (temp == null)
                         temp = Instantiate(fence, holderPosition, Quaternion.Euler(0, angle, 0));
